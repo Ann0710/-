@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+* {
+    font-family: "Nunito", Verdana, sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #212121;
+    color: #ff9a00;
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+.cont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.small {
+    font-size: small;
+    color: #efefef;
+}
+h1, h2, h3 {
+    width: 100%;
+    text-align: center;
+}
+#title {color: #efefef;}
+#prompt {
+    text-align: center;
+    width: 50%;
+    min-width: 300px;
+}
+.btn {
+    margin: 5px;
+    font-size: large;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px #666;
+    background-color: #ff9a00;
+    color: #efefef;
+    cursor: pointer;
+}
+.prompt-img {
+    width: 300px;
+    border-radius: 10px;
+    border: solid 3px #ff9a00;
+}
+.wide-prompt {
+    width: 50%;
+    min-width: 300px;
+    margin: 20px 0px 70px;
+}
+.question {
+    color: #efefef;
+    font-size: larger;
+}
+.input {
+    margin: 5px;
+    font-size: large;
+    color: #ff9a00;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+}
+#spider {
+    max-width: 350px;
+    width: 27%;
+    position: fixed;
+    bottom: -9%;
+    right: -7%;
+}
+#pumpkin {
+    max-width: 400px;
+    min-width: 200px;
+    width: 30%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #31313131;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #41414177;
+}
+
+@media (max-width: 800px) {
+    body{font-size: medium;}
+    .input {
+        width: 150px;
+        height: 25px;
+    }
+    #spider {display: none;}
+    #pumpkin {
+        max-width: 400px;
+        width: 50%;
+    }
+    .wide-prompt {margin-bottom: 50%;}
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+}
